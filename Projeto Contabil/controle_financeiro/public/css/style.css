@@ -1,0 +1,247 @@
+/* Estilos gerais */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+/* Estilos para a barra lateral */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #5a7478;
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #393636;
+    border-radius: 5px;
+}
+
+/* Estilos para o conteúdo principal */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background: #5a7478;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    padding-inline: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    transition: color 0.1s linear;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.content {
+    padding: 1.25rem;
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #5a7478;
+    color: #fff;
+}
+
+table thead th {
+    padding: 5px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+table tbody td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+fieldset{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+fieldset legend {
+    padding: 10px;
+    font-size: 15px; 
+    color: #000000;
+}
+
+.table-container {
+    width: 100%; /* Defina a largura do contêiner da tabela */
+    max-height: 300px; /* Defina a altura máxima do contêiner da tabela */
+    overflow: auto; /* Adiciona barras de rolagem quando necessário */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor do contêiner da tabela */
+}
+
+
+/* Estilo do botão padrão */
+.button-padrao {
+    background-color: #394a4e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #000 
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Estilo base para todas as colunas */
+[class*="grid-"] {
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* Configurações de largura para cada grid do 1 ao 12 */
+.grid-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+.grid-2 { flex: 0 0 16.67%; max-width: 16.67%; }
+.grid-3 { flex: 0 0 25%; max-width: 25%; }
+.grid-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+.grid-5 { flex: 0 0 41.67%; max-width: 41.67%; }
+.grid-6 { flex: 0 0 50%; max-width: 50%; }
+.grid-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+.grid-8 { flex: 0 0 66.67%; max-width: 66.67%; }
+.grid-9 { flex: 0 0 75%; max-width: 75%; }
+.grid-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+.grid-11 { flex: 0 0 91.67%; max-width: 91.67%; }
+.grid-12 { flex: 0 0 100%; max-width: 100%; }
+
+.input-grpoup{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row !important;
+    margin-right: 15px;
+}
+
+.flex-row label {
+    margin-right: 15px;
+    width: 10%;
+}
+
+.flex-column {
+    justify-content: start !important;
+    align-items: start !important;
+    flex-direction: column !important;
+}
+
+.flex-column label {
+    margin-bottom: 12px;
+}
+
+.input-grpoup input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #394a4e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.action button{
+    width: 100px;
+    margin-right: 10px;
+}
+
+
+select{
+    display: block;
+    border-radius: 5px;
+    border: 1px #f2f2f2 solid;
+    background: #fdfdfd;
+    padding: 10px;
+    width: 100%;
+    border-color: #394a4e;
+    margin-bottom: 10px;
+    
+}
+
+#tbRendaMensal{
+    height: calc(100dvh - 188px);
+    overflow: auto;
+}
